@@ -2,7 +2,8 @@ import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
 import * as fs from 'fs'
 
 var handler = async (m, { conn, text, participants, isOwner, isAdmin }) => {
-if (!m.quoted && !text) return conn.reply(m.chat, '❀ Debes enviar un texto para hacer un tag.', m)
+if (!m.quoted && !text) return conn.reply(m.chat, 'ლ 𝒔𝒆𝒎𝒑𝒂𝒊𝒊 𝒆𝒏 𝒅𝒐𝒏𝒅𝒆 𝒆𝒔𝒕𝒂́ 𝒆𝒍. 𝒕𝒆𝒙𝒕𝒐 𝒑𝒂𝒓𝒂 𝒉𝒂𝒄𝒆𝒓 𝒆𝒍 𝒕𝒂𝒈 凸( •̀_•́ )凸? 
+        𝑴𝑰𝑻𝑺𝑼𝑹𝒀-𝑴𝑫.', m)
 let mentionedJid = await m.mentionedJid
 let users = participants.map(u => conn.decodeJid(u.id))
 let htextos = text ? text : (m.quoted && m.quoted.text) ? m.quoted.text : "¡¡¡Hola!!!"
